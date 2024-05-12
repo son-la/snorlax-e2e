@@ -1,7 +1,5 @@
 name: Execute e2e
-on:
-  repository_dispatch:
-    types: [trigger-workflow]
+on: [repository_dispatch]
 jobs:
   e2e:
     runs-on: ubuntu-latest
